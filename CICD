@@ -1,0 +1,223 @@
+lint	Set up job	﻿2026-11-04T12:43:35.1455658Z Current runner version: '2.338.2'
+lint	Set up job	2026-11-04T12:43:35.1483108Z ##[group]Runner Image Provisioner
+lint	Set up job	2026-11-04T12:43:35.1484103Z Hosted Compute Agent
+lint	Set up job	2026-11-04T12:43:35.1484704Z Version: 20261028.624
+lint	Set up job	2026-11-04T12:43:35.1485414Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+lint	Set up job	2026-11-04T12:43:35.1486180Z Build Date: 2026-10-28T21:51:42Z
+lint	Set up job	2026-11-04T12:43:35.1486877Z Worker ID: {4d5ca262-328f-4274-9a0f-47925be7ab9b}
+lint	Set up job	2026-11-04T12:43:35.1487637Z Region: eastus2
+lint	Set up job	2026-11-04T12:43:35.1488194Z Cloud: Azure
+lint	Set up job	2026-11-04T12:43:35.1488750Z ##[endgroup]
+lint	Set up job	2026-11-04T12:43:35.1490793Z ##[group]Operating System
+lint	Set up job	2026-11-04T12:43:35.1491678Z Ubuntu
+lint	Set up job	2026-11-04T12:43:35.1492598Z 24.04.5
+lint	Set up job	2026-11-04T12:43:35.1493147Z LTS
+lint	Set up job	2026-11-04T12:43:35.1493734Z ##[endgroup]
+lint	Set up job	2026-11-04T12:43:35.1494314Z ##[group]Runner Image
+lint	Set up job	2026-11-04T12:43:35.1494924Z Image: ubuntu-24.04
+lint	Set up job	2026-11-04T12:43:35.1495557Z Version: 20261101.360.1
+lint	Set up job	2026-11-04T12:43:35.1496641Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+lint	Set up job	2026-11-04T12:43:35.1498547Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+lint	Set up job	2026-11-04T12:43:35.1499535Z ##[endgroup]
+lint	Set up job	2026-11-04T12:43:35.1501332Z ##[group]GITHUB_TOKEN Permissions
+lint	Set up job	2026-11-04T12:43:35.1503972Z Contents: read
+lint	Set up job	2026-11-04T12:43:35.1504692Z Metadata: read
+lint	Set up job	2026-11-04T12:43:35.1505269Z Packages: read
+lint	Set up job	2026-11-04T12:43:35.1505813Z ##[endgroup]
+lint	Set up job	2026-11-04T12:43:35.1508161Z Secret source: Actions
+lint	Set up job	2026-11-04T12:43:35.1509213Z Cache mode: write
+lint	Set up job	2026-11-04T12:43:35.1510220Z Prepare workflow directory
+lint	Set up job	2026-11-04T12:43:35.1845230Z Prepare all required actions
+lint	Set up job	2026-11-04T12:43:35.1894395Z Getting action download info
+lint	Set up job	2026-11-04T12:43:35.3997898Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+lint	Set up job	2026-11-04T12:43:35.5210165Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+lint	Set up job	2026-11-04T12:43:35.6009173Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+lint	Set up job	2026-11-04T12:43:35.8014946Z Complete job name: lint
+lint	Run actions/checkout@v4	﻿2026-11-04T12:43:35.8910698Z ##[group]Run actions/checkout@v4
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8911830Z with:
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8912392Z   repository: Awab7-ux/xrwvm-fullstack_developer_capstone
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8916277Z   token: ***
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8916704Z   ssh-strict: true
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8917135Z   ssh-user: git
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8917573Z   persist-credentials: true
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8918065Z   clean: true
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8918517Z   sparse-checkout-cone-mode: true
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8919039Z   fetch-depth: 1
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8919467Z   fetch-tags: false
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8919903Z   show-progress: true
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8920342Z   lfs: false
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8920739Z   submodules: false
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8921184Z   set-safe-directory: true
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8921839Z   allow-unsafe-pr-checkout: false
+lint	Run actions/checkout@v4	2026-11-04T12:43:35.8922635Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2268871Z Syncing repository: Awab7-ux/xrwvm-fullstack_developer_capstone
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2272422Z ##[group]Getting Git version info
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2274689Z Working directory is '/home/runner/work/xrwvm-fullstack_developer_capstone/xrwvm-fullstack_developer_capstone'
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2276653Z [command]/usr/bin/git version
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2447475Z git version 2.56.0
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2472997Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2489018Z Temporarily overriding HOME='/home/runner/work/_temp/13dbe3ae-8a82-4fc3-a28d-138ad5b7b7d8' before making global git config changes
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2491867Z Adding repository directory to the temporary git global config as a safe directory
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2496559Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/xrwvm-fullstack_developer_capstone/xrwvm-fullstack_developer_capstone
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2568202Z Deleting the contents of '/home/runner/work/xrwvm-fullstack_developer_capstone/xrwvm-fullstack_developer_capstone'
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2571760Z ##[group]Initializing the repository
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2576853Z [command]/usr/bin/git init /home/runner/work/xrwvm-fullstack_developer_capstone/xrwvm-fullstack_developer_capstone
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2740645Z hint: Using 'master' as the name for the initial branch. This default branch name
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2743369Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2745597Z hint: to use in all of your new repositories, which will suppress this warning,
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2747345Z hint: call:
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2748134Z hint:
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2749177Z hint: 	git config --global init.defaultBranch <name>
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2750133Z hint:
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2750962Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2752373Z hint: 'development'. The just-created branch can be renamed via this command:
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2753724Z hint:
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2754602Z hint: 	git branch -m <name>
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2755586Z hint:
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2756825Z hint: Disable this message with "git config set advice.defaultBranchName false"
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2763993Z Initialized empty Git repository in /home/runner/work/xrwvm-fullstack_developer_capstone/xrwvm-fullstack_developer_capstone/.git/
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2775057Z [command]/usr/bin/git remote add origin https://github.com/Awab7-ux/xrwvm-fullstack_developer_capstone
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2832333Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2833900Z ##[group]Disabling automatic garbage collection
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2837205Z [command]/usr/bin/git config --local gc.auto 0
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2874277Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2875898Z ##[group]Setting up auth
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2882999Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.2925759Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.3397253Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.3441646Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.3690730Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.3737781Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.3982292Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.4032507Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.4033606Z ##[group]Fetching the repository
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.4046084Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a47adb1da6f034cf4b8be6613e6136efeb8db995:refs/remotes/origin/main
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.6358664Z From https://github.com/Awab7-ux/xrwvm-fullstack_developer_capstone
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.6363440Z  * [new ref]         a47adb1da6f034cf4b8be6613e6136efeb8db995 -> origin/main
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.6366618Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.6367859Z ##[group]Determining the checkout info
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.6369422Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.6371876Z [command]/usr/bin/git sparse-checkout disable
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.6438214Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.6482444Z ##[group]Checking out the ref
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.6486074Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.6597117Z Switched to a new branch 'main'
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.6604655Z branch 'main' set up to track 'origin/main'.
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.6611142Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.6663264Z [command]/usr/bin/git log -1 --format=%H
+lint	Run actions/checkout@v4	2026-11-04T12:43:36.6700291Z a47adb1da6f034cf4b8be6613e6136efeb8db995
+lint	Run actions/setup-python@v5	﻿2026-11-04T12:43:36.7109550Z ##[group]Run actions/setup-python@v5
+lint	Run actions/setup-python@v5	2026-11-04T12:43:36.7110869Z with:
+lint	Run actions/setup-python@v5	2026-11-04T12:43:36.7112220Z   python-version: 3.12
+lint	Run actions/setup-python@v5	2026-11-04T12:43:36.7113298Z   check-latest: false
+lint	Run actions/setup-python@v5	2026-11-04T12:43:36.7123518Z   token: ***
+lint	Run actions/setup-python@v5	2026-11-04T12:43:36.7124524Z   update-environment: true
+lint	Run actions/setup-python@v5	2026-11-04T12:43:36.7125685Z   allow-prereleases: false
+lint	Run actions/setup-python@v5	2026-11-04T12:43:36.7126818Z   freethreaded: false
+lint	Run actions/setup-python@v5	2026-11-04T12:43:36.7127841Z ##[endgroup]
+lint	Run actions/setup-python@v5	2026-11-04T12:43:36.8624820Z ##[group]Installed versions
+lint	Run actions/setup-python@v5	2026-11-04T12:43:36.8729092Z (node:2336) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+lint	Run actions/setup-python@v5	2026-11-04T12:43:36.8734026Z (Use `node --trace-deprecation ...` to show where the warning was created)
+lint	Run actions/setup-python@v5	2026-11-04T12:43:36.8736886Z Successfully set up CPython (3.12.16)
+lint	Run actions/setup-python@v5	2026-11-04T12:43:36.8739914Z ##[endgroup]
+lint	Run actions/setup-node@v4	﻿2026-11-04T12:43:36.9122164Z ##[group]Run actions/setup-node@v4
+lint	Run actions/setup-node@v4	2026-11-04T12:43:36.9124158Z with:
+lint	Run actions/setup-node@v4	2026-11-04T12:43:36.9125541Z   node-version: 20
+lint	Run actions/setup-node@v4	2026-11-04T12:43:36.9127058Z   always-auth: false
+lint	Run actions/setup-node@v4	2026-11-04T12:43:36.9128673Z   check-latest: false
+lint	Run actions/setup-node@v4	2026-11-04T12:43:36.9139339Z   token: ***
+lint	Run actions/setup-node@v4	2026-11-04T12:43:36.9140273Z env:
+lint	Run actions/setup-node@v4	2026-11-04T12:43:36.9141366Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Run actions/setup-node@v4	2026-11-04T12:43:36.9143537Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+lint	Run actions/setup-node@v4	2026-11-04T12:43:36.9145419Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Run actions/setup-node@v4	2026-11-04T12:43:36.9147074Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Run actions/setup-node@v4	2026-11-04T12:43:36.9148748Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Run actions/setup-node@v4	2026-11-04T12:43:36.9150440Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+lint	Run actions/setup-node@v4	2026-11-04T12:43:36.9152124Z ##[endgroup]
+lint	Run actions/setup-node@v4	2026-11-04T12:43:37.0731094Z Attempting to download 20...
+lint	Run actions/setup-node@v4	2026-11-04T12:43:37.0910569Z (node:2344) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+lint	Run actions/setup-node@v4	2026-11-04T12:43:37.0914116Z (Use `node --trace-deprecation ...` to show where the warning was created)
+lint	Run actions/setup-node@v4	2026-11-04T12:43:37.5362075Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+lint	Run actions/setup-node@v4	2026-11-04T12:43:37.9077955Z Extracting ...
+lint	Run actions/setup-node@v4	2026-11-04T12:43:37.9231040Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/4072fa9f-5c60-4545-89c0-7f306d81ef80 -f /home/runner/work/_temp/3f3b1b86-3caf-43ab-877c-eb39fa5f4391
+lint	Run actions/setup-node@v4	2026-11-04T12:43:38.9521701Z Adding to the cache ...
+lint	Run actions/setup-node@v4	2026-11-04T12:43:40.5076378Z ##[group]Environment details
+lint	Run actions/setup-node@v4	2026-11-04T12:43:40.7660608Z node: v20.20.2
+lint	Run actions/setup-node@v4	2026-11-04T12:43:40.7661254Z npm: 10.8.2
+lint	Run actions/setup-node@v4	2026-11-04T12:43:40.7662055Z yarn: 1.22.22
+lint	Run actions/setup-node@v4	2026-11-04T12:43:40.7662943Z ##[endgroup]
+lint	Install Python lint tools	﻿2026-11-04T12:43:40.7879656Z ##[group]Run python -m pip install flake8
+lint	Install Python lint tools	2026-11-04T12:43:40.7880126Z ^[[36;1mpython -m pip install flake8^[[0m
+lint	Install Python lint tools	2026-11-04T12:43:40.7910558Z shell: /usr/bin/bash -e {0}
+lint	Install Python lint tools	2026-11-04T12:43:40.7910876Z env:
+lint	Install Python lint tools	2026-11-04T12:43:40.7911157Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Install Python lint tools	2026-11-04T12:43:40.7912019Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+lint	Install Python lint tools	2026-11-04T12:43:40.7912466Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Install Python lint tools	2026-11-04T12:43:40.7912889Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Install Python lint tools	2026-11-04T12:43:40.7913281Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Install Python lint tools	2026-11-04T12:43:40.7913666Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+lint	Install Python lint tools	2026-11-04T12:43:40.7914004Z ##[endgroup]
+lint	Install Python lint tools	2026-11-04T12:43:42.3904656Z Collecting flake8
+lint	Install Python lint tools	2026-11-04T12:43:42.4547916Z   Downloading flake8-7.5.0-py2.py3-none-any.whl.metadata (3.8 kB)
+lint	Install Python lint tools	2026-11-04T12:43:42.4716413Z Collecting mccabe<0.8.0,>=0.7.0 (from flake8)
+lint	Install Python lint tools	2026-11-04T12:43:42.4789970Z   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+lint	Install Python lint tools	2026-11-04T12:43:42.4955626Z Collecting pycodestyle<2.16.0,>=2.15.0 (from flake8)
+lint	Install Python lint tools	2026-11-04T12:43:42.5029078Z   Downloading pycodestyle-2.15.0-py2.py3-none-any.whl.metadata (4.5 kB)
+lint	Install Python lint tools	2026-11-04T12:43:42.5206441Z Collecting pyflakes<4.2.0,>=4.1.0 (from flake8)
+lint	Install Python lint tools	2026-11-04T12:43:42.5282759Z   Downloading pyflakes-4.1.0-py2.py3-none-any.whl.metadata (3.7 kB)
+lint	Install Python lint tools	2026-11-04T12:43:42.5412502Z Downloading flake8-7.5.0-py2.py3-none-any.whl (57 kB)
+lint	Install Python lint tools	2026-11-04T12:43:42.5600695Z Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+lint	Install Python lint tools	2026-11-04T12:43:42.5704123Z Downloading pycodestyle-2.15.0-py2.py3-none-any.whl (31 kB)
+lint	Install Python lint tools	2026-11-04T12:43:42.5812199Z Downloading pyflakes-4.1.0-py2.py3-none-any.whl (66 kB)
+lint	Install Python lint tools	2026-11-04T12:43:42.6690292Z Installing collected packages: pyflakes, pycodestyle, mccabe, flake8
+lint	Install Python lint tools	2026-11-04T12:43:42.8030295Z 
+lint	Install Python lint tools	2026-11-04T12:43:42.8042420Z Successfully installed flake8-7.5.0 mccabe-0.7.0 pycodestyle-2.15.0 pyflakes-4.1.0
+lint	Install Python lint tools	2026-11-04T12:43:42.8055780Z 
+lint	Install Python lint tools	2026-11-04T12:43:42.8056431Z [notice] A new release of pip is available: 26.2.2 -> 26.3
+lint	Install Python lint tools	2026-11-04T12:43:42.8057323Z [notice] To update, run: pip install --upgrade pip
+lint	Lint Python	﻿2026-11-04T12:43:42.8706595Z ##[group]Run flake8 server --max-line-length=120
+lint	Lint Python	2026-11-04T12:43:42.8707044Z ^[[36;1mflake8 server --max-line-length=120^[[0m
+lint	Lint Python	2026-11-04T12:43:42.8728934Z shell: /usr/bin/bash -e {0}
+lint	Lint Python	2026-11-04T12:43:42.8729186Z env:
+lint	Lint Python	2026-11-04T12:43:42.8729461Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Lint Python	2026-11-04T12:43:42.8729905Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+lint	Lint Python	2026-11-04T12:43:42.8730344Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Lint Python	2026-11-04T12:43:42.8730738Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Lint Python	2026-11-04T12:43:42.8731128Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Lint Python	2026-11-04T12:43:42.8731822Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+lint	Lint Python	2026-11-04T12:43:42.8732170Z ##[endgroup]
+lint	Lint JavaScript	﻿2026-11-04T12:43:43.1272573Z ##[group]Run npx --yes jshint server/database/*.js
+lint	Lint JavaScript	2026-11-04T12:43:43.1273009Z ^[[36;1mnpx --yes jshint server/database/*.js^[[0m
+lint	Lint JavaScript	2026-11-04T12:43:43.1294176Z shell: /usr/bin/bash -e {0}
+lint	Lint JavaScript	2026-11-04T12:43:43.1294429Z env:
+lint	Lint JavaScript	2026-11-04T12:43:43.1294696Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Lint JavaScript	2026-11-04T12:43:43.1295145Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+lint	Lint JavaScript	2026-11-04T12:43:43.1295583Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Lint JavaScript	2026-11-04T12:43:43.1295980Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Lint JavaScript	2026-11-04T12:43:43.1296369Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+lint	Lint JavaScript	2026-11-04T12:43:43.1296774Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+lint	Lint JavaScript	2026-11-04T12:43:43.1297100Z ##[endgroup]
+lint	Lint JavaScript	2026-11-04T12:43:44.3822674Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+lint	Lint JavaScript	2026-11-04T12:43:44.4392974Z npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+lint	Post Run actions/setup-node@v4	﻿2026-11-04T12:43:44.9250692Z Post job cleanup.
+lint	Post Run actions/setup-node@v4	2026-11-04T12:43:45.0574429Z (node:2433) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+lint	Post Run actions/setup-node@v4	2026-11-04T12:43:45.0575624Z (Use `node --trace-deprecation ...` to show where the warning was created)
+lint	Post Run actions/setup-python@v5	﻿2026-11-04T12:43:45.0803731Z Post job cleanup.
+lint	Post Run actions/setup-python@v5	2026-11-04T12:43:45.2156617Z (node:2441) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+lint	Post Run actions/setup-python@v5	2026-11-04T12:43:45.2158259Z (Use `node --trace-deprecation ...` to show where the warning was created)
+lint	Post Run actions/checkout@v4	﻿2026-11-04T12:43:45.2406909Z Post job cleanup.
+lint	Post Run actions/checkout@v4	2026-11-04T12:43:45.3346877Z [command]/usr/bin/git version
+lint	Post Run actions/checkout@v4	2026-11-04T12:43:45.3395710Z git version 2.56.0
+lint	Post Run actions/checkout@v4	2026-11-04T12:43:45.3438297Z Temporarily overriding HOME='/home/runner/work/_temp/55ec43fd-059f-474a-bfb3-306356338711' before making global git config changes
+lint	Post Run actions/checkout@v4	2026-11-04T12:43:45.3439867Z Adding repository directory to the temporary git global config as a safe directory
+lint	Post Run actions/checkout@v4	2026-11-04T12:43:45.3443926Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/xrwvm-fullstack_developer_capstone/xrwvm-fullstack_developer_capstone
+lint	Post Run actions/checkout@v4	2026-11-04T12:43:45.3488585Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	Post Run actions/checkout@v4	2026-11-04T12:43:45.3551756Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	Post Run actions/checkout@v4	2026-11-04T12:43:45.3826634Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	Post Run actions/checkout@v4	2026-11-04T12:43:45.3891113Z http.https://github.com/.extraheader
+lint	Post Run actions/checkout@v4	2026-11-04T12:43:45.3905090Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+lint	Post Run actions/checkout@v4	2026-11-04T12:43:45.3964259Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	Post Run actions/checkout@v4	2026-11-04T12:43:45.4245033Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	Post Run actions/checkout@v4	2026-11-04T12:43:45.4298633Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint	Complete job	﻿2026-11-04T12:43:45.4700226Z Cleaning up orphan processes
+lint	Complete job	2026-11-04T12:43:45.5079793Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
