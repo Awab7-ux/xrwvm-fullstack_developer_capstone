@@ -3,12 +3,27 @@ import json
 import requests
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
+from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_GET, require_POST
 
 from . import restapis
 from .models import CarModel
+
+
+def home(request):
+    return render(request, "Home.html")
+
+
+def dealer_page(request, dealer_id):
+    return render(request, "Dealer.html", {"dealer_id": dealer_id})
+
+
+@login_required(login_url="/")
+def post_review_page(request, dealer_id):
+    return render(request, "PostReview.html", {"dealer_id": dealer_id})
 
 
 def _payload(request):
