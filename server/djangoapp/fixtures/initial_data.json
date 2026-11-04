@@ -1,0 +1,14 @@
+[
+  {"model": "djangoapp.carmake", "pk": 1, "fields": {"name": "Toyota", "description": "Reliable vehicles with innovative engineering."}},
+  {"model": "djangoapp.carmake", "pk": 2, "fields": {"name": "Honda", "description": "Practical, efficient vehicles built for everyday life."}},
+  {"model": "djangoapp.carmake", "pk": 3, "fields": {"name": "Ford", "description": "American vehicles for work, family, and adventure."}},
+  {"model": "djangoapp.carmake", "pk": 4, "fields": {"name": "Chevrolet", "description": "A broad range of cars, trucks, and SUVs."}},
+  {"model": "djangoapp.carmake", "pk": 5, "fields": {"name": "Subaru", "description": "All-wheel-drive vehicles for confident travel."}},
+  {"model": "djangoapp.carmodel", "pk": 1, "fields": {"car_make": 1, "dealer_id": 15, "name": "Camry", "type": "Sedan", "year": 2022}},
+  {"model": "djangoapp.carmodel", "pk": 2, "fields": {"car_make": 1, "dealer_id": 15, "name": "RAV4", "type": "SUV", "year": 2023}},
+  {"model": "djangoapp.carmodel", "pk": 3, "fields": {"car_make": 2, "dealer_id": 2, "name": "Accord", "type": "Sedan", "year": 2021}},
+  {"model": "djangoapp.carmodel", "pk": 4, "fields": {"car_make": 2, "dealer_id": 6, "name": "CR-V", "type": "SUV", "year": 2023}},
+  {"model": "djangoapp.carmodel", "pk": 5, "fields": {"car_make": 3, "dealer_id": 15, "name": "Explorer", "type": "SUV", "year": 2020}},
+  {"model": "djangoapp.carmodel", "pk": 6, "fields": {"car_make": 4, "dealer_id": 4, "name": "Malibu", "type": "Sedan", "year": 2019}},
+  {"model": "djangoapp.carmodel", "pk": 7, "fields": {"car_make": 5, "dealer_id": 12, "name": "Outback", "type": "WAGON", "year": 2022}}
+]

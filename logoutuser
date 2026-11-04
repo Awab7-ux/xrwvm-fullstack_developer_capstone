@@ -1,0 +1,2 @@
+curl -sS -X POST http://127.0.0.1:8000/djangoapp/logout
+{"message": "Logged out"}

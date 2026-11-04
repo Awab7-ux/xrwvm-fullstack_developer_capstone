@@ -1,0 +1,44 @@
+const mongoose = require('mongoose');
+const { Dealer, Review } = require('./models');
+
+const dealers = [
+  { _id: 1, full_name: 'Northstar Toyota', city: 'Wichita', state: 'Kansas', address: '1120 East Kellogg Dr', zip: '67211', lat: 37.679, long: -97.323 },
+  { _id: 2, full_name: 'Prairie Honda', city: 'Topeka', state: 'Kansas', address: '2400 South Kansas Ave', zip: '66611', lat: 39.024, long: -95.677 },
+  { _id: 3, full_name: 'Blue River Ford', city: 'Kansas City', state: 'Kansas', address: '8100 State Ave', zip: '66112', lat: 39.115, long: -94.781 },
+  { _id: 4, full_name: 'Sunflower Chevrolet', city: 'Overland Park', state: 'Kansas', address: '9200 Metcalf Ave', zip: '66212', lat: 38.959, long: -94.668 },
+  { _id: 5, full_name: 'Ozark Auto Group', city: 'Springfield', state: 'Missouri', address: '1600 South Campbell Ave', zip: '65807', lat: 37.184, long: -93.295 },
+  { _id: 6, full_name: 'Lakefront Motors', city: 'Chicago', state: 'Illinois', address: '4100 North Western Ave', zip: '60618', lat: 41.957, long: -87.689 },
+  { _id: 7, full_name: 'Rocky Mountain Cars', city: 'Denver', state: 'Colorado', address: '555 South Broadway', zip: '80209', lat: 39.704, long: -104.987 },
+  { _id: 8, full_name: 'Lone Star Auto', city: 'Austin', state: 'Texas', address: '2200 South Lamar Blvd', zip: '78704', lat: 30.245, long: -97.777 },
+  { _id: 9, full_name: 'Golden Gate Vehicles', city: 'San Francisco', state: 'California', address: '1800 Van Ness Ave', zip: '94109', lat: 37.793, long: -122.423 },
+  { _id: 10, full_name: 'Desert Valley Motors', city: 'Phoenix', state: 'Arizona', address: '3300 East Camelback Rd', zip: '85018', lat: 33.510, long: -112.010 },
+  { _id: 11, full_name: 'Peachtree Auto', city: 'Atlanta', state: 'Georgia', address: '950 Piedmont Ave NE', zip: '30309', lat: 33.781, long: -84.381 },
+  { _id: 12, full_name: 'Harborview Cars', city: 'Seattle', state: 'Washington', address: '700 Westlake Ave N', zip: '98109', lat: 47.626, long: -122.338 },
+  { _id: 13, full_name: 'Liberty Auto Center', city: 'Philadelphia', state: 'Pennsylvania', address: '2100 Market St', zip: '19103', lat: 39.954, long: -75.176 },
+  { _id: 14, full_name: 'Capitol City Motors', city: 'Oklahoma City', state: 'Oklahoma', address: '1300 North Broadway Ave', zip: '73103', lat: 35.481, long: -97.516 },
+  { _id: 15, full_name: 'Kansas City Dealership', city: 'Kansas City', state: 'Kansas', address: '3400 Rainbow Blvd', zip: '66103', lat: 39.061, long: -94.609 }
+];
+
+const reviews = [
+  { dealerId: 15, name: 'Jordan Lee', review: 'Fantastic service and a smooth buying experience.', purchase: true, purchase_date: '2025-03-12', car_make: 'Toyota', car_model: 'Camry', sentiment: 'positive' },
+  { dealerId: 15, name: 'Morgan Patel', review: 'The staff were helpful and answered every question.', purchase: true, purchase_date: '2025-05-04', car_make: 'Honda', car_model: 'CR-V', sentiment: 'positive' },
+  { dealerId: 15, name: 'Taylor Brooks', review: 'Fair price, quick paperwork, and a great car.', purchase: true, purchase_date: '2025-07-19', car_make: 'Ford', car_model: 'Explorer', sentiment: 'positive' },
+  { dealerId: 1, name: 'Casey Reed', review: 'Friendly team and an easy test drive.', purchase: true, purchase_date: '2025-02-15', car_make: 'Toyota', car_model: 'RAV4', sentiment: 'positive' },
+  { dealerId: 2, name: 'Avery Kim', review: 'Good selection and transparent pricing.', purchase: true, purchase_date: '2025-01-21', car_make: 'Honda', car_model: 'Accord', sentiment: 'positive' }
+];
+
+async function seed() {
+  const uri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/cars_dealership';
+  await mongoose.connect(uri);
+  await Dealer.deleteMany({});
+  await Review.deleteMany({});
+  await Dealer.insertMany(dealers);
+  await Review.insertMany(reviews);
+  console.log(`Seeded ${dealers.length} dealers and ${reviews.length} reviews.`);
+  await mongoose.disconnect();
+}
+
+seed().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});

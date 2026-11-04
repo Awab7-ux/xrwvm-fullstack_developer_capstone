@@ -1,0 +1,24 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 04, 2026 - 12:41:24
+Django version 5.2.19, using settings 'djangoproj.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[04/Nov/2026 12:41:42] "GET /djangoapp/get_cars HTTP/1.1" 200 322
+[04/Nov/2026 12:42:09] "POST /djangoapp/login HTTP/1.1" 200 59
+[04/Nov/2026 12:42:09] "POST /djangoapp/logout HTTP/1.1" 200 25
+[04/Nov/2026 12:42:09] "GET /djangoapp/reviews/dealer/15 HTTP/1.1" 200 893
+[04/Nov/2026 12:42:09] "GET /djangoapp/get_dealers HTTP/1.1" 200 2555
+[04/Nov/2026 12:42:09] "GET /djangoapp/dealer/15 HTTP/1.1" 200 172
+[04/Nov/2026 12:42:09] "GET /djangoapp/get_dealers/Kansas HTTP/1.1" 200 837
+[04/Nov/2026 12:42:09] "GET /djangoapp/get_cars HTTP/1.1" 200 322
+[04/Nov/2026 12:42:09] "GET /djangoapp/analyze/Fantastic%20services HTTP/1.1" 200 25
+[04/Nov/2026 12:42:28] "POST /djangoapp/register HTTP/1.1" 201 66
+[04/Nov/2026 12:42:28] "POST /djangoapp/add_review HTTP/1.1" 201 174
+[04/Nov/2026 12:42:28] "GET /static/About.html HTTP/1.1" 200 3145
+[04/Nov/2026 12:42:28] "GET /static/Contact.html HTTP/1.1" 200 2026

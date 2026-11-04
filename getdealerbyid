@@ -1,0 +1,2 @@
+curl -sS http://127.0.0.1:8000/djangoapp/dealer/15
+{"_id": 15, "full_name": "Kansas City Dealership", "city": "Kansas City", "state": "Kansas", "address": "3400 Rainbow Blvd", "zip": "66103", "lat": 39.061, "long": -94.609}
