@@ -1,3 +1,4 @@
+const SENTIMENT_EMOJI = { positive: '😊', neutral: '😐', negative: '🙁' };
 const dealerPage = document.getElementById('dealerPage');
 const dealerId = dealerPage.dataset.dealerId;
 const dealerError = document.getElementById('dealerError');
@@ -23,7 +24,7 @@ function addReviewCard(review) {
   const sentimentValue = (review.sentiment || '').toLowerCase();
   const label = ['positive', 'neutral', 'negative'].includes(sentimentValue) ? sentimentValue : 'neutral';
   sentiment.className = `sentiment sentiment-${label}`;
-  sentiment.textContent = label;
+  sentiment.textContent = `${SENTIMENT_EMOJI[label] || ''} ${label}`.trim();
   top.append(reviewer, sentiment);
   const text = document.createElement('p');
   text.className = 'mb-3';
