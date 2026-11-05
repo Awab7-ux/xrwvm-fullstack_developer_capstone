@@ -20,7 +20,9 @@ const reviewSchema = new mongoose.Schema({
   car_make: String,
   car_model: String,
   sentiment: String,
-  createdAt: { type: Date, default: Date.now }
+  createdAt: { type: Date, default: Date.now },
+  dealership: Number,
+  car_year: Number,
 }, { versionKey: false });
 
 module.exports = {

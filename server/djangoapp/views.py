@@ -113,6 +113,7 @@ def add_review(request):
     data = _payload(request)
     if not data:
         return JsonResponse({"error": "Invalid request body"}, status=400)
+    data["dealerId"] = data.get("dealerId") or data.get("dealership")
     try:
         return JsonResponse(restapis.post_review(f"{restapis.DATABASE_URL}/insert_review", data), status=201)
     except requests.RequestException:
